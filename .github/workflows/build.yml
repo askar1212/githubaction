@@ -33,3 +33,4 @@ jobs:
           docker push askar1212/game_tic_toc:latest
         env:
           DOCKER_CLI_ACI: 1
+          

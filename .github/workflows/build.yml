@@ -44,7 +44,7 @@ jobs:
        run: docker pull askar1212/game_tic_toc:latest
 
      - name: Deploy to container
-       run: docker run -d --name game -p askar1212/game_tic_toc:latest
+       run: docker run -d  --name game -p 3000:3000 askar1212/game_tic_toc:latest
 
      - name: update kubeconfig
        run: aws eks --region us-west-2 update-kubeconfig --name EKS_CLOUD

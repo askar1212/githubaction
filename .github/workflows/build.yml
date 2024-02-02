@@ -33,4 +33,6 @@ jobs:
           docker push askar1212/game_tic_toc:latest
         env:
           DOCKER_CLI_ACI: 1
+      - name: Image scan
+        run: trivy image askar1212/game_tic_toc:latest > trivyimage.txt
           
